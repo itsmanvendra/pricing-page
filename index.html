@@ -60,36 +60,44 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Enquiry Form</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form action="forms.maakeetoo.com/formapi/791" class="modal-body" method="post">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInputName" name="firstName" placeholder="name">
-                            <label for="floatingInputName">Name</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com" name="email">
-                            <label for="floatingInputEmail">Email address</label>
-                        </div>
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="message"></textarea>
-                            <label for="floatingTextarea">Comments</label>
-                        </div>
-                        <label for="customRange3" class="form-label mt-2">Number of Customers</label>
-                        <input type="range" class="form-range" min="0" max="30" step="1" id="customRange3">
-                        <label class="form-label mt-2">Select Plan</label><br>
-                        <div>
-                            <input type="radio" class="btn-check" id="free" name="planSelected">
-                            <label class="btn" for="free">Free</label>
+                    <div class="modal-body" method="post">
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInputName" name="firstname" placeholder="name">
+                                <label for="floatingInputName">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com" name="email">
+                                <label for="floatingInputEmail">Email address</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="message"></textarea>
+                                <label for="floatingTextarea">Comments</label>
+                            </div>
+                            <label for="numberOfCustomers" class="form-label mt-2">Number of Customers
+                                <span class="range-slider__value bg-primary px-2 py-1 text-white rounded-2">16</span>
+                            </label>
+                            <div>
+                                <input type="range" class="form-range" min="0" max="30" step="1" id="numberOfCustomers">
+                            </div>
                             
-                            <input type="radio" class="btn-check" id="pro" checked autocomplete="off" name="planSelected">
-                            <label class="btn" for="pro">Pro</label>
                             
-                            <input type="radio" class="btn-check" id="enterprise" autocomplete="off" name="planSelected">
-                            <label class="btn" for="enterprise">Enterprise</label>
-                        </div>
-                    </form>
+                            <label class="form-label mt-2">Select Plan</label><br>
+                            <div>
+                                <input type="radio" class="btn-check" id="free" name="planSelected" value="free">
+                                <label class="btn" for="free">Free</label>
+                                
+                                <input type="radio" class="btn-check" id="pro" checked autocomplete="off" name="planSelected" value="pro">
+                                <label class="btn" for="pro">Pro</label>
+                                
+                                <input type="radio" class="btn-check" id="enterprise" autocomplete="off" name="planSelected" value="enterprise">
+                                <label class="btn" for="enterprise">Enterprise</label>
+                            </div>
+                        </form>
+                    </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Discard</button>
-                        <button type="submit" class="btn btn-primary" id="submit">Submit Form</button>
+                        <button type="submit" class="btn btn-primary" id="submit" >Submit Form</button>
                     </div>
                 </div>
             </div>

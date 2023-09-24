@@ -5,3 +5,13 @@ body{
     align-items: center;
     display: flex;
 }
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 80vw;
+        margin: 1rem auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
